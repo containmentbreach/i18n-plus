@@ -1,0 +1,143 @@
+ru:
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+
+    day_names: [воскресенье, понедельник, вторник, среда, четверг, пятница, суббота]
+    standalone_day_names: [Воскресенье, Понедельник, Вторник, Среда, Четверг, Пятница, Суббота]
+    abbr_day_names: [Вс, Пн, Вт, Ср, Чт, Пт, Сб]
+
+    month_names: [~, января, февраля, марта, апреля, мая, июня, июля, августа, сентября, октября, ноября, декабря]
+    # see russian gem for info on "standalone" day names
+    standalone_month_names: [~, Январь, Февраль, Март, Апрель, Май, Июнь, Июль, Август, Сентябрь, Октябрь, Ноябрь, Декабрь]
+    abbr_month_names: [~, янв., февр., марта, апр., мая, июня, июля, авг., сент., окт., нояб., дек.]
+    standalone_abbr_month_names: [~, янв., февр., март, апр., май, июнь, июль, авг., сент., окт., нояб., дек.]
+
+    order: [ :day, :month, :year ]
+
+  time:
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      short: "%d %b, %H:%M"
+      long: "%d %B %Y, %H:%M"
+
+    am: "утра"
+    pm: "вечера"
+
+  number:
+    format:
+      separator: "."
+      delimiter: " "
+      precision: 3
+
+    currency:
+      format:
+        format: "%n %u"
+        unit: "руб."
+        separator: "."
+        delimiter: " "
+        precision: 2
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 1
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "меньше минуты"
+      less_than_x_seconds:
+        one:   "меньше {{count}} секунды"
+        few:   "меньше {{count}} секунд"
+        other:  "меньше {{count}} секунд"
+      x_seconds:
+        one:   "{{count}} секунда"
+        few:   "{{count}} секунды"
+        other:  "{{count}} секунд"
+      less_than_x_minutes:
+        one:   "меньше {{count}} минуты"
+        few:   "меньше {{count}} минут"
+        other:  "меньше {{count}} минут"
+      x_minutes:
+        one:   "{{count}} минуту"
+        few:   "{{count}} минуты"
+        other:  "{{count}} минут"
+      about_x_hours:
+        one:   "около {{count}} часа"
+        few:   "около {{count}} часов"
+        other:  "около {{count}} часов"
+      x_days:
+        one:   "{{count}} день"
+        few:   "{{count}} дня"
+        other:  "{{count}} дней"
+      about_x_months:
+        one:   "около {{count}} месяца"
+        few:   "около {{count}} месяцев"
+        other:  "около {{count}} месяцев"
+      x_months:
+        one:   "{{count}} месяц"
+        few:   "{{count}} месяца"
+        other:  "{{count}} месяцев"
+      about_x_years:
+        one:   "около {{count}} года"
+        few:   "около {{count}} лет"
+        other:  "около {{count}} лет"
+      over_x_years:
+        one:   "больше {{count}} года"
+        few:   "больше {{count}} лет"
+        other:  "больше {{count}} лет"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "{{model}}: {{count}} ошибка при сохранении"
+          few:   "{{model}}: {{count}} ошибки при сохранении"
+          other:  "{{model}}: {{count}} ошибок при сохранении"
+
+        body: "Проблемы возникли со следующими полями:"
+
+      messages:
+        inclusion: "не входит в число допустимых"
+        exclusion: "имеет недопустимое значение"
+        invalid: "имеет неверное значение"
+        confirmation: "не совпадает с подтверждением"
+        accepted: "нужно подтвердить"
+        empty: "не может быть пустым"
+        blank: "не может быть пустым"
+        too_long:
+          one:   "длиннее, чем нужно (максимум {{count}} символ)"
+          few:   "длиннее, чем нужно (максимум {{count}} символа)"
+          other:  "длиннее, чем нужно (максимум {{count}} символов)"
+        too_short:
+          one:   "короче, чем нужно (минимум {{count}} символ)"
+          few:   "короче, чем нужно (минимум {{count}} символа)"
+          other:  "короче, чем нужно (минимум {{count}} символов)"
+        wrong_length:
+          one:   "должно быть длиной ровно {{count}} символ"
+          few:   "должно быть длиной ровно {{count}} символа"
+          other:  "должно быть длиной ровно {{count}} символов"
+        taken: "уже существует"
+        not_a_number: "не является числом"
+        greater_than: "должно быть больше {{count}}"
+        greater_than_or_equal_to: "должно быть больше или равно {{count}}"
+        equal_to: "значение должно, равное {{count}}"
+        less_than: "может иметь значение меньшее чем {{count}}"
+        less_than_or_equal_to: "может иметь значение меньшее или равное {{count}}"
+        odd: "может иметь лишь четное значение"
+        even: "может иметь лишь нечетное значение"
+
+  support:
+    array:
+      sentence_connector: "и"
+      skip_last_comma: true
