@@ -1,1 +1,1 @@
-require File.join(File.dirname(__FILE__), 'backend')
+require 'i18n_plus/simple_backend_plus'
